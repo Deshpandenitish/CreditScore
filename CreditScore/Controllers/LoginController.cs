@@ -33,7 +33,7 @@ namespace CreditScore.Controllers
 
         [Authorize]
         [HttpGet("ValidateUser/{email}/{password}")]
-        public IActionResult GetUser([FromQuery] string email, [FromQuery] string password)
+        public IActionResult GetUser(string email, string password)
         {
             var response = Ibusiness.AuthenticateUser(email, password);
             return Ok(response);
