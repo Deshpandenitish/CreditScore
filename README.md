@@ -1,4 +1,5 @@
 -- Scaffolding script
+-------------------------------------------------
 scaffold-dbcontext "Data Source=5400-TI11989\MSSQLSERVER01;Initial 
 Catalog=CreditScore;Trusted_Connection=True;Integrated Security=True;
 TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
@@ -6,6 +7,7 @@ TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models
 
 
 -- Table scripts
+-------------------------------------------------
 use CreditScore;
  
 CREATE TABLE Users (
