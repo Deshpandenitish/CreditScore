@@ -24,6 +24,9 @@ namespace CreditScore.Infrastructure
             services.AddScoped<IFinanceDetails, FinanceDetailLogic>();
             services.AddScoped<ICreditScoreVal, CreditScoreLogic>();
             services.AddScoped<IAudit, AuditLogic>();
+
+            services.AddScoped<IlinqRepo, LinqRepo>();
+            services.AddScoped<ILinq, Linqs>();
         }
     }
 }
